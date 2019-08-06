@@ -10,54 +10,16 @@
   margin-left: 5vw;
 }
 
-.itemNav{
-    font-size: 3vh;
-    font-family: Helvetica,sans-serif;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-}
-.itemNav:hover{
-    color:#007bff !important;
-}
-
-.btn-contac{
-    font-size: 3vh;
-    font-family: Helvetica,sans-serif;
-}
-.icon{
-    opacity: 0.4;
-    filter:hue-rotate(90deg);
-    -webkit-filter: hue-rotate(90deg);
-    width: 1.5em;
-    fill: #007bff;
-
-}
-.frame{
-    background-image: url(../../images//dd.svg);
-    display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 1.5em;
-  width: 1.5em;
-  background-size: 1.4em 1.4em;
-
-}
-
-
-
-@media only screen and (max-width: 1142px) and (min-width: 992px)  {  
+@media only screen and (max-width: 1142px) and (min-width: 994px)  {  
     .btn-contac{
         display: none;
             }
-} 
+}
 
 
 .btn-contac:hover{
-
     background: white;
-    border-color: black;
-   
+
 }
 #miFondo{
     position: fixed;
@@ -70,32 +32,29 @@
     height: auto;
 }
 
-.iconHome:hover{
-    color:orange !important;
-}
-.iconHome{
-    font-size: 1.3em;
-     color:#007bff !important;
-}
-
-
-
 #contItem li a{
+
+    font-size: 2.7vh;
+    font-family: 'Segoe UI';
+    font-weight: 600;
     position: relative;
     font-weight:bold;
     color:white;
     margin: 0px 15px;
+
 }
 #contItem li a:hover{
-  color: #007bff !important;
+  color: orange !important;
+  background: white;
 }
+
 #contItem li a:after{
     position: absolute;
     bottom: 7px;
     left: 0px;
     width: 100%;
     height: 4px;
-    background-color: #007bff;
+    background-color: orange;
     content: "";
     opacity: 0;
     transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;

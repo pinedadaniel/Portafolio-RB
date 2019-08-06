@@ -1,13 +1,13 @@
 import React from 'react';
 import "./styles/NavBarStyle.css";
 import brand from '../images/brand.png';
-import {ReactComponent as dd} from '../images/dd.svg';
-import service from '../images/icon-service.png';
-import proyec from '../images/icon-proyec.png';
-import xp from '../images/dd.svg';
+import iconHome from '../images/iconHome.svg';
+import iconService from '../images/iconService.svg';
+import iconProject from '../images/iconProject.svg';
+import iconAbout from '../images/iconAbout.svg';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import about from '../images/icon-about.png';
+
 
 
 
@@ -33,20 +33,18 @@ class Navbar extends React.Component {
 
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto"  id='contItem'>
+    <li class="nav-item">
+         <a class="nav-link" href="#"> <img src={iconHome} width='27'/>  INICIO  </a>
+      </li>                                   
       <li class="nav-item">
-      <span className='itemNav'>   <a class="nav-link"  href="#">  <i class="fas fa-store iconNav"></i>  Inicio  </a></span>  
-      </li>                                       
-      <li class="nav-item">
-      <span className='itemNav'>    <a class="nav-link" href="#">  <i class="fas fa-tools iconNav" ></i>  Servicios  </a></span>
+         <a class="nav-link" href="#"> <img src={iconService} width='27'/>  SERVICIOS  </a>
       </li>
       <li class="nav-item">
-      <span className='itemNav'>    <a class="nav-link" href="#">  <span class="frame grey-out"></span>   Sobre Mi </a></span> 
+         <a class="nav-link" href="#"> <img src={iconAbout} width='27'/> SOBRE MI </a> 
       </li> 
+    
       <li class="nav-item">
-      <span className='itemNav'> <a class="nav-link" href="#">   <img src={xp} className='icon'/>   Experiencia </a></span>
-      </li>
-      <li class="nav-item">
-      <span className='itemNav'> <a class="nav-link" href="#"> <div className='frame invert '> </div> Proyectos  </a></span>
+    <a class="nav-link" href="#"> <img src={iconProject} width='27'/> PROYECTOS  </a>
       </li>
       <li className="nav-item">
       <a  className="btn btn-outline-light btn-contac text-primary" data-toggle="modal" data-target="#modalCompra">CONTACTAME!</a>
