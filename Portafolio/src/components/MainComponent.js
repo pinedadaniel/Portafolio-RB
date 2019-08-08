@@ -10,8 +10,22 @@ import fondo from '../images/bg.mp4';
 import "./styles/MainStyle.css";
 
 
+var i = 0;
+var txt = 'Lorem ipsum typing effect!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
 class Main extends React.Component {
+    
     render() {
+
         return (
             <React.Fragment>
                 <video autoPlay muted loop id='miFondo'>
@@ -19,8 +33,8 @@ class Main extends React.Component {
                 </video>
                 <div className="container">
                     <div className='row '>
-                        <div className='col-xl-12 contDiseñoWeb'>
-                            <div className='contMainHome'>
+                        <div className='col-12 contDiseñoWeb'>
+                            <div className='contDivMain '>
                                 <div className='contWebDesign'>
                                     <button type="button"
                                         className="btn btn-lg btn btn-outline-warning btn-webDesign text-left">
@@ -58,14 +72,19 @@ class Main extends React.Component {
                                         <span className='textButtomHome text-primary'> Publicidad y Redes Sociales </span> </button>
                                 </div>
 
-                                <div class="box ">
-                                    <p class="split"> Programador Front_Ends</p>
-
-
-                                </div>
+                                
 
                             </div>
 
+                            <div className='contTextMain '> 
+                            <h1 className='text-light  nameHome'>  Kevin Daniel Pineda   </h1>
+                            <hr/>
+                            <h1 className='text-light  rolHome'> Programador Front_End    </h1>
+                            <a href="#" className="btn btn-outline-warning btn-homeContact" id='btn-contac'>Conctactos</a>
+            <button type="button" className="btn btn-homeMesagge " data-toggle="modal" data-target="#modalCompra">Enviame un Mensaje</button>
+            
+            
+                            </div>
 
 
                         </div>

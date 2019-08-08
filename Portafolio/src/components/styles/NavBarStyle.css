@@ -10,7 +10,7 @@
   margin-left: 5vw;
 }
 
-@media only screen and (max-width: 1142px) and (min-width: 994px)  {  
+@media only screen and (max-width: 1006px) and (min-width: 992px)  {  
     .btn-contac{
         display: none;
             }
@@ -34,13 +34,13 @@
 
 #contItem li a{
 
-    font-size: 2.7vh;
-    font-family: 'Segoe UI';
+    font-size: 2.5vh;
+    font-family: Georgia, Times New Roman, Times, serif;
     font-weight: 600;
     position: relative;
     font-weight:bold;
     color:white;
-    margin: 0px 15px;
+    margin: 0px 5px;
 
 }
 #contItem li a:hover{

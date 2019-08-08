@@ -1,148 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:800');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
-
-:root {
-  --f-size: 15;
-  --f-unit: 1vmin;
-  --f: calc(var(--f-size) * var(--f-unit));
-  --bg: #181717; 
-}
-
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Bungee Shade', cursive;
-  font-size: var(--f);
-  
-  background-color: var(--bg);
-  display: flex;
-  min-height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
-
-p {
-  flex: 1;
-  line-height: .75;
-  margin: auto;
-  color: #1af0dc;
-  text-align: center;
-  transform: scaleX(var(--scale, 1));
-  animation: glitch-p 11s infinite alternate;
-  
-  &::before,
-  &::after {
-    --top: 0;        // offset from top [0 - 10]
-    --left: 0;       // offset from left [0.001 - 1]
-    --v-height: 30%; // visible part
-    
-    --n-tenth: calc(var(--f-size) * .1 * var(--top));
-    --t-cut: calc(var(--n-tenth) / var(--f-size) * 100%);
-    --b-cut: calc(var(--t-cut) + var(--v-height));
-    
-    content: attr(data-text);
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    
-    transform: translateX(calc(var(--left) * 100%));
-    
-    // this helps to get rid of pixelization
-    filter: drop-shadow(0 0 transparent); 
-    
-    text-shadow: calc(var(--left) * -3em) 0 .02em lime, 
-                 calc(var(--left) * -6em) 0 .02em #ff00e1;
-    
-    background-color: var(--bg);
-    clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
-  } 
-  
-  &::before {
-    animation: glitch-b 1.7s infinite alternate-reverse;
-  }
-  &::after {
-    animation: glitch-a 3.1s infinite alternate;
-  }
-}
-
-@keyframes glitch-p {
-  17% { --scale: .87; }
-  31% { --scale: 1.1; }
-  37% { --scale: 1.3; }
-  47% { --scale: .91; }
-  87% { --scale: 1; }
-}
-
-@keyframes glitch-a {
-  10%,30%,50%,70%,90% {
-    --top: 0;
-    --left: 0;
-  }
-  0% {
-   --v-height: 15%; 
-  }
-  20% {
-    --left: .005;
-  }
-  40% {
-    --left: .01;
-    --v-height: 20%;
-    --top: 3;
-  }
-  60% {
-    --left: .03;
-    --v-height: 25%;
-    --top: 6;
-  }
-  80% {
-    --left: .07;
-    --v-height: 5%;
-    --top: 8;
-  }
-  100% {
-    --left: .083;
-    --v-height: 30%;
-    --top: 1;
-  }
-}
-
-@keyframes glitch-b {
-    10%,30%,50%,70%,90% {
-    --top: 0;
-    --left: 0;
-  }
-  0% {
-   --v-height: 15%; 
-   --top: 10;
-  }
-  20% {
-    --left: -.005;
-  }
-  40% {
-    --left: -.01;
-    --v-height: 17%;
-    --top: 3;
-  }
-  60% {
-    --left: -.03;
-    --v-height: 35%;
-    --top: 6;
-  }
-  80% {
-    --left: -.07;
-    --v-height: 5%;
-    --top: 8;
-  }
-  100% {
-    --left: -.083;
-    --v-height: 30%;
-    --top: 1;
-  }
-}
-
 #imgFondo{
     position: fixed;
     right: 0;
@@ -152,37 +7,34 @@ p {
     background-size: cover;
     width: auto;
     height: auto;
-   }
-.textMain{
-  position: absolute;
-  left: 80vh;
-  bottom: 50vh;
 }
-@media only screen and(max-width: 991px)  {  
-    .contWebDesign{
-        display: none;
-            }
-            .btn-webDesign{
-                display: none;
-            }
+@media screen and (max-width: 991px) {
+.contDivMain{
+display:none;
 }
-
-   
+}
 .contDiseñoWeb{
-  
-    display: grid;
-  
-    
-    height: 95vh;
-    padding-bottom: 0;
-    margin-bottom: 0;
+display: grid;
+height: 98vh;
+padding-bottom: 0;
+margin-bottom: 0;
 }
-.contMainHome{
+.contDivMain{
+grid-row: 12/13;
+}
+.contTextMain{
+   
     grid-row: 12/13;
-  
-   width: 100%;
- 
+    grid-column:2/5;
 }
+@media screen and (max-width: 991px) {
+    .contTextMain{
+        grid-row: 2/6;
+        grid-column:1/2;
+        width: 100%;
+        height: 100%;
+    }
+    }
 .contWebDesign{
     margin-bottom: 2vh;
 }
@@ -198,38 +50,25 @@ p {
 .contAppReact{
     margin-bottom: 2.5vh;
 }
-
-
-   .btn-webDesign{
-       width: 33vw;
-       
-      
-
-       border-bottom-right-radius: 20px;
-       background: rgba(0,0,0,0.7);
-      
-   }
-   .btn-webDesign:hover{
-    background: rgba(250,250,250,1)
-
-   }
-   .btn-ShoppingOnline{
+.btn-webDesign{
     width: 33vw;
-   
-
+    border-bottom-right-radius: 20px;
+    background: rgba(0,0,0,0.7);   
+}
+.btn-webDesign:hover{
+    background: rgba(250,250,250,1)
+}
+.btn-ShoppingOnline{
+    width: 33vw;
     border-bottom-right-radius: 20px;
     background: rgba(0,0,0,0.7)
-   }
-   
-
+}
 .btn-ShoppingOnline:hover{
     background: rgba(250,250,250,1)
 
 }
 .btn-ResponsiveDesign{
     width: 33vw;
-   
-
     border-bottom-right-radius: 20px;
     background: rgba(0,0,0,0.7)
 }
@@ -238,8 +77,6 @@ p {
 }
 .btn-solutionWeb{
     width: 33vw;
-   
-
     border-bottom-right-radius: 20px;
     background: rgba(0,0,0,0.7)
 }
@@ -248,41 +85,132 @@ p {
 }
 .btn-appReact{
     width: 33vw;
-   
-
     border-bottom-right-radius: 20px;
     background: rgba(0,0,0,0.7)
 }
 .btn-appReact:hover{
     background: rgba(250,250,250,1);
-    
 }
-
 .btn-advertising{
     width: 33vw;
-   
-
     border-bottom-right-radius: 20px;
     background: rgba(0,0,0,0.7)
 }
 .btn-advertising:hover{
     background: rgba(250,250,250,1);
-    
 }
 
 .textButtomHome{ 
        font-family: 'Arial Narrow Bold';
        font-size: 4vh;
        margin-left: 2vh;
-   
    }
-   .textButtomHome:hover{ 
+.textButtomHome:hover{ 
        color:orange !important ;
-   }
-
-  
-   .imgWebDesign{
-    width: 12%;
-   }
-
-   
+}
+.imgWebDesign{
+    width: 10%;
+}
+.nameHome{
+    font-family: "sans-serif";
+    font-size: 52px; 
+    margin-left: 16vh;
+    margin-top: 10vh;
+}
+hr{
+    background: white;
+    width:370px;
+    margin-left: 8vw;
+}
+.rolHome{
+    font: 27px "Courier new";
+    font-weight: 600;
+    margin-left: 23vh;
+}
+.btn-homeMesagge{
+   background:#ffc107;
+  margin-left: 10px;
+  color:black;
+}
+.btn-homeContact{
+    margin-left: 25vh;
+}
+.btn-homeContact:hover{
+    color:black;
+}
+.btn-homeMesagge:hover{
+   border:solid 1px yellow;
+  background: transparent;
+  color: #ffc107;
+}
+@media screen and (max-width: 991px) {
+.contTextMain{
+    margin-top: 20vh;
+}
+.nameHome{
+    font-family: "sans-serif";
+    font-size: 52px; 
+    margin-left: 10vw;    
+}
+.rolHome{
+    font: 27px "Courier new";
+    font-weight: 600;
+    margin-left: 14vw;  
+}
+hr{
+    margin-left: 13vw;  
+}
+.btn-homeMesagge{
+     
+    margin-left: 10px;
+}
+.btn-homeContact{
+    margin-left: 17vw;
+    }
+}
+@media screen and (max-width: 514px) {
+.contTextMain{
+    margin-top: 20vh;
+}
+.nameHome{       
+    font-size: 10vw; 
+    margin-left: 0;     
+}
+.rolHome{
+    font-size: 6vw; 
+    font-weight: 600;
+    margin-left: 0;
+}
+hr{
+    margin-left: 0;  
+}
+.btn-homeMesagge{         
+     margin-left: 10px;
+}
+.btn-homeContact{
+    margin-left: 0;
+    }
+}
+@media screen and (max-width: 390px) {
+.contTextMain{
+    margin-top: 20vh;
+}
+.nameHome{       
+    font-size: 10vw;     
+}
+.rolHome{
+    font-size: 6vw; 
+    font-weight: 600;
+    margin-left: 0;
+}
+hr{
+  width: 98%;
+}
+.btn-homeMesagge{         
+    margin-left: 10px;
+}
+.btn-homeContact{
+    margin-left: 0;
+    }
+}
+    

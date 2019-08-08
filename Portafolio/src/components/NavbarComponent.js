@@ -9,10 +9,6 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
 
-
-
-
-
 class Navbar extends React.Component {
     render(){
         return (
@@ -47,7 +43,7 @@ class Navbar extends React.Component {
     <a class="nav-link" href="#"> <img src={iconProject} width='27'/> PROYECTOS  </a>
       </li>
       <li className="nav-item">
-      <a  className="btn btn-outline-light btn-contac text-primary" data-toggle="modal" data-target="#modalCompra">CONTACTAME!</a>
+      <a  className="btn btn-outline-light btn-contac text-warning" data-toggle="modal" data-target="#modalCompra">CONTACTAME!</a>
       </li>
       <div> 
         
