@@ -23,8 +23,8 @@ class Navbar extends React.Component {
           </Link>
          
 
-  <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon bg-secondary"></span>
+  <button class="navbar-toggler bg-warning btn btn-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon  "></span>
   </button>
 
   <div class="collapse navbar-collapse" id="collapsibleNavbar">

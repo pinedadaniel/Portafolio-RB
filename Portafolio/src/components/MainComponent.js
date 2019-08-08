@@ -15,15 +15,15 @@ var txt = 'Lorem ipsum typing effect!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 }
 
 class Main extends React.Component {
-    
+
     render() {
 
         return (
@@ -72,18 +72,23 @@ class Main extends React.Component {
                                         <span className='textButtomHome text-primary'> Publicidad y Redes Sociales </span> </button>
                                 </div>
 
-                                
+
 
                             </div>
 
-                            <div className='contTextMain '> 
-                            <h1 className='text-light  nameHome'>  Kevin Daniel Pineda   </h1>
-                            <hr/>
-                            <h1 className='text-light  rolHome'> Programador Front_End    </h1>
-                            <a href="#" className="btn btn-outline-warning btn-homeContact" id='btn-contac'>Conctactos</a>
-            <button type="button" className="btn btn-homeMesagge " data-toggle="modal" data-target="#modalCompra">Enviame un Mensaje</button>
-            
-            
+                            <div className='contTextMain '>
+                                <h1 className='text-light  nameHome'>  Kevin Daniel Pineda   </h1>
+                                <hr />
+                                <h1 className='text-light  rolHome'> Programador Front_End    </h1>
+                                <a href="#" className="btn btn-outline-warning btn-homeContact" id='btn-contac'>Conctactos</a>
+                                <button type="button" className="btn btn-homeMesagge " data-toggle="modal" data-target="#modalCompra">
+                                    Enviame un Mensaje</button>
+
+                                <div className='presentHome'>
+                                    <h1 className='textPresentHome'>"El <span className='present'>Éxito </span> es la <span className='present'> habilidad </span> 
+                                    de ir de fracaso en <span className='present'>fracaso, </span> sin perder el <span className='present'> entusiasmo</span>"</h1>
+
+                                </div>
                             </div>
 
 

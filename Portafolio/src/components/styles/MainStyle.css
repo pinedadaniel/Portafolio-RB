@@ -23,7 +23,7 @@ margin-bottom: 0;
 grid-row: 12/13;
 }
 .contTextMain{
-   
+  
     grid-row: 12/13;
     grid-column:2/5;
 }
@@ -213,4 +213,29 @@ hr{
     margin-left: 0;
     }
 }
+.presentHome{
+    margin-top: 8vh;
+    display: none;
+   
+  
     
+}
+.textPresentHome{
+    text-align: center;
+  font: 4vh 'News Gothic MT';
+  color:white;
+  display: none;
+    
+}
+@media screen and (max-width: 991px) {
+    .presentHome{
+        display: block;  
+    }
+    .textPresentHome{
+      display: block;
+    }
+}
+    
+.present{
+    color: #ffc107;
+}
