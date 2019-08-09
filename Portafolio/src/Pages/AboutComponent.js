@@ -26,7 +26,7 @@ class About extends React.Component {
                             Futuro Laboral, a lo largo de los años, eh adquirido diferentes Habilidades que me ayudan a 
                             desempeñarme de la mejor manera dentro de un proyecto, combinándolo con habilidades Sociales
                             para un Mejor rendimiento tanto Laboral como Personal.
-                            <a href="#sectionAbout2" className="btn btn-outline-warning arrowGo"> <span>↓</span> </a>
+                            <a href="#sectionAbout2" className="btn btn-outline-warning arrowGo"> <span>Siguiente ↓</span> </a>
                         </p>
                         </div>
                         </div>
@@ -70,6 +70,7 @@ class About extends React.Component {
 
                            </div>
                        </div>
+                       
                    </div>                 
                    </div>
 

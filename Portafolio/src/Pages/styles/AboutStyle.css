@@ -9,16 +9,22 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
 background-color: black;
-height: 630px;
+height: 100vh;
 opacity: 1;
 
 }
+
+.bg-About2{
+  
+    background: green;
+    }
+
 
 .presentationAbout{
     font-family: 'Courier New';
     font-size: 4vh;
     color:white;
-    grid-row: 2/3;
+    grid-row: 5/6;
     font-weight: 900;
     
 }
@@ -37,6 +43,7 @@ opacity: 1;
 .contAbout2{
     display: grid;
     height: 620px;
+   
   
 }
 .arrowGo{ 
@@ -100,6 +107,10 @@ margin-left: 3vh;
      -o-transition: all 0.5s ease;
  }
 .imgHtml5:hover{
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px black;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
  }
@@ -160,7 +171,7 @@ margin-left: 3vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-color: #ffc107;
-            height: 630px;
+            height: 100vh;
             
 }
 
@@ -176,9 +187,9 @@ margin-left: 3vh;
 @media only screen and (max-width: 1326px) {
     .presentationAbout{
         font-family: 'Courier New';
-        font-size:4.5vh;
+        font-size:2.2vw;
         color:white;
-        grid-row: 2/3;
+        grid-row: 3/4;
         font-weight: 600;
     
     }
@@ -225,6 +236,23 @@ margin-left: 3vh;
         font-weight: 900;
     }
 }
+@media only screen and (max-width: 768px) {
+    .presentationAbout{
+        font-family: 'Courier New';
+        font-size: 3vh;
+        color:white;
+        grid-row: 2/3;
+        font-weight: 600;
+                        
+    }
+    .ofertsAbout{
+        font-family: 'Courier New';
+        font-size: 4vh;
+        color:black;
+        grid-row: 5/6;
+        font-weight: 900;
+    }
+}
 @media only screen and (max-width: 719px) {
     .bg-About1 {    
     background: #ffc107;  
@@ -234,7 +262,7 @@ margin-left: 3vh;
     font-family: 'Courier New';
     font-size: 3.2vh;
     color:black;
-    grid-row: 3/5;
+    grid-row: 4/5;
     font-weight: 600;
 
 }
@@ -243,10 +271,7 @@ margin-left: 3vh;
    margin-left: 3vh;
    margin-top: 3vh;
 }
-.arrowGo::before{ 
-  
-    content: 'Siguiente'; 
- }
+
  .bg-About2{
     background-color: black;
 
@@ -259,11 +284,7 @@ margin-left: 3vh;
         border: solid 1.49px #ffc107;
         color: #ffc107;
     }
-    .ArrowNext{
-        border: solid 1.49px #ffc107;
-        color: #ffc107;
-  
-    }
+   
 
 }
 @media only screen and (max-width: 418px) {
