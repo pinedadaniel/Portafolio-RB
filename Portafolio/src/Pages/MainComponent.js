@@ -9,26 +9,13 @@ import iconpubli from '../images/icon-publi.png';
 import fondo from '../images/bg.mp4';
 import "./styles/MainStyle.css";
 
-
-var i = 0;
-var txt = 'Lorem ipsum typing effect!'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
 class Main extends React.Component {
 
     render() {
 
         return (
             <React.Fragment>
-                <video autoPlay muted loop id='miFondo'>
+                <video className='refreshVideo'  autoPlay muted loop id='miFondo'>
                     <source src={fondo} type='video/mp4' />
                 </video>
                 <div className="container">
@@ -87,7 +74,7 @@ class Main extends React.Component {
                                 <div className='presentHome'>
                                     <h1 className='textPresentHome'>"El <span className='present'>Éxito </span> es la <span className='present'> habilidad </span> 
                                     de ir de fracaso en <span className='present'>fracaso, </span> sin perder el <span className='present'> entusiasmo</span>"</h1>
-
+                                   
                                 </div>
                             </div>
 
@@ -95,6 +82,7 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </div>
+       
             </React.Fragment>
 
         );

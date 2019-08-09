@@ -7,6 +7,6 @@ import $ from 'jquery';
 import Popper from "popper.js";
 
 
-   const container = document.getElementById('app');
+const container = document.getElementById('app');
 
-   ReactDOM.render(<App/> , container);
+ReactDOM.render(<App/> , container);

@@ -1,13 +1,11 @@
-#imgFondo{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    background-size: cover;
-    width: auto;
-    height: auto;
+body{
+    zoom: 100%;
 }
+.refreshVideo{
+    background-color: black;
+  
+}
+
 @media screen and (max-width: 991px) {
 .contDivMain{
 display:none;

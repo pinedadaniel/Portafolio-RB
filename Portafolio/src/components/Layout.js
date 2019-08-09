@@ -1,15 +1,15 @@
 import React from 'react';
 import NavBar from '../components/NavbarComponent';
-import Main from '../components/MainComponent';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 const Layout = (props) =>{
     return(
         <React.Fragment>
             <NavBar/>
-            <Main/>
-         
             {props.children}
+           
         </React.Fragment>
     )
 
