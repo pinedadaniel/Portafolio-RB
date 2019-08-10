@@ -66,3 +66,16 @@
 
 }
 
+.btn-whatsapp {
+    display:block;
+    width:4vw;
+    height:4vh;
+    color:#fff;
+    position: fixed;
+    right:60px;
+    bottom:60px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}

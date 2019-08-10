@@ -76,6 +76,7 @@ margin-left: 3vh;
 
 }
 .imgHtml5{
+  
     margin-right: 2vh;
    width: 9vw;
     -webkit-transition: all 0.5s ease-out;
@@ -171,7 +172,7 @@ margin-left: 3vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-color: #ffc107;
-            height: 100vh;
+            height: 117vh;
             
 }
 
@@ -187,9 +188,9 @@ margin-left: 3vh;
 @media only screen and (max-width: 1326px) {
     .presentationAbout{
         font-family: 'Courier New';
-        font-size:2.2vw;
+        font-size:1.8vw;
         color:white;
-        grid-row: 3/4;
+        grid-row: 2/3;
         font-weight: 600;
     
     }
@@ -203,7 +204,7 @@ margin-left: 3vh;
      }
      .ofertsAbout{
         
-        grid-row: 4/5;
+        grid-row: 2/3;
       
     }
     .bg-About2{
@@ -232,7 +233,7 @@ margin-left: 3vh;
         font-family: 'Courier New';
         font-size: 4vh;
         color:black;
-        grid-row: 5/6;
+        grid-row: 2/3;
         font-weight: 900;
     }
 }
@@ -262,7 +263,7 @@ margin-left: 3vh;
     font-family: 'Courier New';
     font-size: 3.2vh;
     color:black;
-    grid-row: 4/5;
+    grid-row: 3/4;
     font-weight: 600;
 
 }
@@ -277,7 +278,7 @@ margin-left: 3vh;
 
 }
   .ofertsAbout{
-      grid-row: 2/3;
+      grid-row: 5/6;
         color:#ffc107;     
     }
     .ArrowBack{
