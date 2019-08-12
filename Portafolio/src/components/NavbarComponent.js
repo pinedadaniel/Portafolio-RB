@@ -6,6 +6,8 @@ import iconService from '../images/iconService.svg';
 import iconProject from '../images/iconProject.svg';
 import iconAbout from '../images/iconAbout.svg';
 import { Link } from 'react-router-dom';
+import modal from './ModalComponent'
+
 import $ from 'jquery';
 
 
@@ -36,15 +38,15 @@ class Navbar extends React.Component {
          <Link className="nav-link" to="/About"> <img src={iconAbout} width='27'/> SOBRE MI </Link> 
       </li>                                   
       <li className="nav-item">
-         <Link className="nav-link" to="#"> <img src={iconService} width='27'/>  SERVICIOS  </Link>
+         <Link className="nav-link" to="/Services"> <img src={iconService} width='27'/>  SERVICIOS  </Link>
       </li>
       
     
       <li className="nav-item">
-    <Link className="nav-link" to="#"> <img src={iconProject} width='27'/> PROYECTOS  </Link>
+    <Link className="nav-link" to="/Projects"> <img src={iconProject} width='27'/> PROYECTOS  </Link>
       </li>
       <li className="nav-item">
-      <Link  className="btn btn-outline-light btn-contac text-warning" data-toggle="modal" data-target="#modalCompra">CONTACTAME!</Link>
+      <a  className="btn btn-outline-light btn-contac text-warning" data-toggle="modal" data-target="#modalCompra1">CONTACTAME!</a>
       </li>
       <div> 
         

@@ -1,0 +1,176 @@
+.tittleCardAbout{
+    font-family: '' sans-serif;
+    font-weight: 800;
+    font-size: 5vh;
+    text-decoration-line: underline;
+}
+.tittleParAbout{
+    font-family: 'Courier New';
+    font-size: 5vh;
+    font-weight: 800;
+}
+.ParAbout{
+    font-family: 'Courier New';  
+    font-size: 4vh;
+}
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 22% 0 0 1%;
+
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 48%;
+}
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    background: green;
+    cursor: default;
+   height: 380px;
+    max-height: 390px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.back {
+    transform: rotateY( 180deg);
+}
+
+
+   
+  strong {
+     
+    background: #fff;
+    border-radius: 20%;
+    color: black;
+    font-size: 1.5em;
+    padding: 0px 5px 0px 5px;
+    
+  }
+   
+  .buttonCardAbout {
+    padding: 0.3em 0.5em;
+    background: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+}
+   
+.buttonCardAbout:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+    background: purple;
+   
+  }
+   
+  .cardBox:nth-child(2) .card .back {
+    background: purple;
+  }
+   
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+   
+  
+  @keyframes giro {
+
+    from {
+  
+      transform: rotateY( 180deg);
+  
+    }
+  
+    to {
+  
+      transform: rotateY( 0deg);
+  
+    }
+  
+  }
+  
+  @-webkit-keyframes giro {
+  
+    from {
+  
+      transform: rotateY( 180deg);
+  
+    }
+  
+    to {
+  
+      transform: rotateY( 0deg);
+  
+    }
+  
+  }
+
+  @media screen and (max-width: 719px) {
+
+    .Next2{
+        border: solid 1.49px black;
+        color: black;
+    }
+    .Back2{
+        border: solid 1.49px black;
+        color: black;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+
+    
+    .tittleCardAbout{
+        font-family: '' sans-serif;
+        font-weight: 800;
+        font-size: 4vh;
+        text-decoration-line: underline;
+    }
+    .tittleParAbout{
+        font-family: 'Courier New';
+        font-size: 4vh;
+        font-weight: 800;
+    }
+    .ParAbout{
+        font-family: 'Courier New';  
+        font-size: 3vh;
+    }
+  
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .cardBox {
+  
+      width: 90%;
+  
+      height: 290px;
+  
+    }
+  
+  }

@@ -14,11 +14,14 @@ opacity: 1;
 
 }
 
-.bg-About2{
-  
-    background: green;
-    }
-
+.bg-About3{
+    background-color: black;
+    height: 129vh;
+}
+.bg-About4{
+    background-color: #ffc107;
+    height: 50vh;
+}
 
 .presentationAbout{
     font-family: 'Courier New';
@@ -144,6 +147,13 @@ margin-left: 3vh;
     grid-row: 7/8;
    
 }
+.y{
+   width: 38rem;
+}
+.bt-currim{
+    margin-left: 30vw;
+    margin-top: 9vw;
+}
 @media only screen and (max-width: 376px) and (max-height:812px) {
     .presentationAbout{
         font-family: 'Courier New';
@@ -265,8 +275,15 @@ margin-left: 3vh;
     color:black;
     grid-row: 3/4;
     font-weight: 600;
-
 }
+
+    .bg-About3{
+        background-color: #ffc107;
+    }
+    .bg-About4{
+        background-color: black;
+        height: 70vh;
+    }
 .arrowGo{ 
    background-color: black;
    margin-left: 3vh;
@@ -285,8 +302,18 @@ margin-left: 3vh;
         border: solid 1.49px #ffc107;
         color: #ffc107;
     }
+    .ArrowNext{
+        border: solid 1.49px #ffc107;
+        color: #ffc107;
+    }
    
 
+}
+@media only screen and (max-width: 480px) {
+    .bg-About3{
+        background-color: black;
+        height: 200vh;
+    }
 }
 @media only screen and (max-width: 418px) {
     .presentationAbout{
@@ -324,3 +351,5 @@ margin-left: 3vh;
         font-weight: 900;
     }
 }
+
+

@@ -1,0 +1,16 @@
+body{
+    background: black;
+}
+.t{
+    width: 100%;
+  
+    height: 100vh;
+    background: purple;
+    display: grid;
+}
+.p{
+    width: 100%;
+    height: 100%;
+   
+    grid-row: 7/9
+}

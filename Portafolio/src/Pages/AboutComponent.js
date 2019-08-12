@@ -5,7 +5,9 @@ import BOOTSTRAP from '../images/BOOTSTRAP.png'
 import JAVASCRIPT from '../images/JAVASCRIPT.png'
 import REACTJS from '../images/REACTJS.png'
 import "./styles/AboutStyle.css";
+import Cards from '../components/CardsComponent.js'
 import { Link } from 'react-router-dom';
+import vitae from '../images/hola.pdf'
 
 
 
@@ -60,9 +62,9 @@ class About extends React.Component {
                                 </div>
                               
                                 <a href="#sectionAbout1" className="btn btn-outline-warning ArrowBack "> <span>Volver ↑</span> </a>  
-                               <a href="#sectionAbout3" className="btn btn-outline-warning ArrowNext"> <span>Siguiente ↓</span> </a>       
+                                <a href="#sectionAbout3" className="btn btn-outline-warning ArrowNext "> <span>Siguiente   ↓</span> </a>  
                                </p>
-                                  
+                             
                                </div>
                            </div>
                            <div className='col-xl-4 contImgAbout2'>
@@ -73,6 +75,27 @@ class About extends React.Component {
                        
                    </div>                 
                    </div>
+                   <div className="bg-About3" id='sectionAbout3'>
+                   
+                  <Cards/>
+                      
+                   </div>
+                   <div className="bg-About4" id='sectionAbout4'>
+                        <div className='container'>
+                         <div className='row'>
+                    
+                      
+                            <div className='col-12'> 
+                 
+                        <a className='btn btn-primary btn-lg bt-currim' href='https://personas.serviciodeempleo.gov.co/Postulante/hv_ver.aspx' target='_blank'>
+                            Ver Curriculum
+                        </a>
+                      
+                        </div>
+                   </div>
+                   </div>
+                       
+                    </div>
 
               
                

@@ -67,7 +67,7 @@ class Main extends React.Component {
                                 <h1 className='text-light  nameHome'>  Kevin Daniel Pineda   </h1>
                                 <hr />
                                 <h1 className='text-light  rolHome'> Programador Front_End    </h1>
-                                <a href="#" className="btn btn-outline-warning btn-homeContact" id='btn-contac'>Conctactos</a>
+                                <a href="#" className="btn btn-outline-warning btn-homeContact"data-toggle="modal" data-target="#modalCompra2" id='btn-contac'>Conctactos</a>
                                 <button type="button" className="btn btn-homeMesagge " data-toggle="modal" data-target="#modalCompra">
                                     Enviame un Mensaje</button>
 
